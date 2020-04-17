@@ -36,7 +36,7 @@
         <h5 class="card-title"><?php echo $ravioles->getIngredientPrincipal()?></h5>
 
     </div>
-    <img style="height: 200px; width: 100%; display: block;" src="<?php echo('Assets/img/'.$ravioles->getFile()); ?>" alt="Image de la recette" <?php $ravioles->getFile(); ?> "/>"
+    <img style="height: 200px; width: 100%; display: block;" src="<?php echo('Assets/img/'.$ravioles->getFile()); ?>" alt="Image de la recette"  >
     <div class="card-body">
         <p class="card-text"><?php echo $ravioles->getRecette()?>.</p>
     </div>

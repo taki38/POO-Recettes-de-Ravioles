@@ -64,7 +64,7 @@
                             <td><?php echo $rvl->getIngredientPrincipal()?></td>
                             <td><?php echo $rvl->getRecette()?></td>
                             <td> <img style="max-width: 140px;" src="<?php echo('Assets/img/'.$rvl->getFile()); ?>"
-                                      alt="Image de la recette <?php $rvl->getFile(); ?>"/>" </td>
+                                      alt="Image de la recette "/>" </td>
                             <td>
                                 <a href="/exam_phpOO/index.php?controller=raviole&action=select&id=<?php echo $rvl->getId()?>"><button type="button" class="btn btn-outline-info">+ de details</button></a>
                                 <a href="/exam_phpOO/index.php?controller=raviole&action=delete&id=<?php echo $rvl->getId()?>"><button type="button" class="btn btn-outline-danger">Supprimer</button></a>
