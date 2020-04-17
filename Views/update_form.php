@@ -27,7 +27,7 @@
 
         <label>Image</label>
         <img style="max-width: 140px;" src="<?php echo('Assets/img/'.$raviole->getFile()); ?>"
-             alt="Image de la recette "/>"
+             alt="Image de la recette ">
         <input name="file" type="file" class="form-control">
         <input class="btn btn-secondary m-3" type="submit" value="valider">
     </form>
