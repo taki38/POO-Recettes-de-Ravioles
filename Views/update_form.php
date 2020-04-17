@@ -10,7 +10,7 @@
     <h1>Mise à jour de la recette <?php echo $raviole->getTitre();?></h1>
 
     <a href="index.php?controller=default&action=home">
-        <button style="margin-bottom:10px;" class="btn btn-success">Retour à la page d'acceuil</button>
+        <button style="margin-bottom:10px;" class="btn btn-secondary">Retour à la page d'acceuil</button>
     </a>
 
     <form method="post" action="index.php?controller=raviole&action=updateRaviole&id=<?php echo $raviole->getId()?>" enctype="multipart/form-data">
@@ -22,14 +22,14 @@
 
         <label for="exampleTextarea">Recette</label>
         <textarea class="form-control" id="exampleTextarea" name="recette" rows="3">
-           <?php echo $raviole->getRecette()?>
+            <?php echo $raviole->getRecette()?>
         </textarea>
 
         <label>Image</label>
         <img style="max-width: 140px;" src="<?php echo('Assets/img/'.$raviole->getFile()); ?>"
-             alt="Image de la recette <?php $raviole->getFile(); ?>"/>"
+             alt="Image de la recette "/>"
         <input name="file" type="file" class="form-control">
-        <input class="btn btn-success" type="submit" value="valider">
+        <input class="btn btn-secondary m-3" type="submit" value="valider">
     </form>
 </div>
 
